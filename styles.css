@@ -1,0 +1,163 @@
+/* Reset básico y tipografía */
+:root {
+    --primary-color: #5D4037; /* Marrón chocolate */
+    --secondary-color: #D7CCC8; /* Crema suave */
+    --text-color: #333;
+    --bg-light: #F5F5F5;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* --- NUEVO: SELECTOR DE IDIOMA --- */
+.lang-selector {
+    background-color: #3e2723; /* Un marrón más oscuro */
+    color: white;
+    text-align: right;
+    padding: 5px 20px;
+    font-size: 0.9rem;
+}
+
+.lang-selector a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.lang-selector a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.lang-selector span {
+    color: white;
+    font-weight: bold;
+    cursor: default;
+}
+/* ---------------------------------- */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.btn {
+    display: inline-block;
+    background-color: white;
+    color: var(--primary-color);
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Secciones Generales */
+.section {
+    padding: 60px 0;
+}
+
+.bg-light {
+    background-color: var(--bg-light);
+}
+
+h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+/* Grid del Menú */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.menu-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.menu-item h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+/* Contacto y Mapa */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.info, .map {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hours-list {
+    list-style: none;
+    padding: 0;
+}
+
+.note {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+/* Footer y el Enlace SEO */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+.small-text {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
