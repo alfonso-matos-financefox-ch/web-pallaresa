@@ -4,6 +4,7 @@
     --secondary-color: #D7CCC8; /* Crema suave */
     --text-color: #333;
     --bg-light: #F5F5F5;
+    --lang-bg: #3e2723;
 }
 
 body {
@@ -14,19 +15,20 @@ body {
     line-height: 1.6;
 }
 
-/* --- NUEVO: SELECTOR DE IDIOMA --- */
+/* Selector de Idioma */
 .lang-selector {
-    background-color: #3e2723; /* Un marrón más oscuro */
+    background-color: var(--lang-bg);
     color: white;
     text-align: right;
-    padding: 5px 20px;
+    padding: 8px 20px;
     font-size: 0.9rem;
 }
 
 .lang-selector a {
-    color: #ccc;
+    color: #bbb;
     text-decoration: none;
     font-weight: bold;
+    margin: 0 5px;
 }
 
 .lang-selector a:hover {
@@ -37,44 +39,53 @@ body {
 .lang-selector span {
     color: white;
     font-weight: bold;
+    border-bottom: 2px solid white;
+    margin: 0 5px;
     cursor: default;
 }
-/* ---------------------------------- */
 
+/* Contenedor General */
 .container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Hero Section */
+/* Hero Section (Cabecera) */
 .hero {
-    background-color: var(--primary-color);
+    /* Fondo con la imagen de fachada y un filtro oscuro para que se lea el texto */
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('fachada2.webp');
+    background-size: cover;
+    background-position: center;
     color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 100px 20px;
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
 
 .hero .subtitle {
     font-size: 1.5rem;
     margin-bottom: 30px;
     font-weight: 300;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
 }
 
 .btn {
     display: inline-block;
     background-color: white;
     color: var(--primary-color);
-    padding: 10px 25px;
+    padding: 12px 30px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
     transition: background 0.3s;
+    text-transform: uppercase;
+    font-size: 0.9rem;
 }
 
 .btn:hover {
@@ -83,7 +94,7 @@ body {
 
 /* Secciones Generales */
 .section {
-    padding: 60px 0;
+    padding: 70px 0;
 }
 
 .bg-light {
@@ -93,28 +104,89 @@ body {
 h2 {
     color: var(--primary-color);
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 2rem;
+    margin-bottom: 50px;
+    font-size: 2.2rem;
 }
 
-/* Grid del Menú */
+/* Estilos Historia (Texto + Imagen Lado a Lado) */
+.split-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.text-content {
+    flex: 1;
+    min-width: 300px;
+    font-size: 1.1rem;
+}
+
+.image-content {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.caption {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Galería de Productos */
+.gallery-section {
+    padding: 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 350px; /* Altura uniforme */
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.03);
+    z-index: 1;
+    position: relative;
+}
+
+/* Menú / Carta */
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 30px;
 }
 
 .menu-item {
     background: white;
-    padding: 20px;
+    padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     text-align: center;
 }
 
 .menu-item h3 {
     color: var(--primary-color);
     margin-top: 0;
+    font-size: 1.3rem;
 }
 
 /* Contacto y Mapa */
@@ -133,6 +205,7 @@ h2 {
 .hours-list {
     list-style: none;
     padding: 0;
+    font-size: 1.1rem;
 }
 
 .note {
@@ -142,22 +215,23 @@ h2 {
     margin-top: 15px;
 }
 
-/* Footer y el Enlace SEO */
+/* Footer y Link SEO */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #222;
+    color: #eee;
     text-align: center;
-    padding: 20px 0;
-    font-size: 0.9rem;
+    padding: 30px 0;
+    font-size: 0.95rem;
 }
 
 .small-text {
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 0.85rem;
-    color: #aaa;
+    color: #999;
 }
 
 footer a {
     color: #fff;
     text-decoration: underline;
+    font-weight: bold;
 }
