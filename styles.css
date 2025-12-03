@@ -246,3 +246,65 @@ footer a {
     text-decoration: underline;
     font-weight: bold;
 }
+/* --- PÁGINAS DE DETALLE (POSTRES / PRODUCTOS) --- */
+
+.detail-main {
+    padding: 60px 20px 80px;
+    background: #faf7f3;
+}
+
+.detail-layout {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+    .detail-layout {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.detail-text {
+    flex: 2;
+}
+
+.detail-text h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+}
+
+.detail-text h2 {
+    font-size: 1.3rem;
+    margin-top: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+.detail-meta {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #777;
+    margin-bottom: 0.75rem;
+}
+
+.detail-image {
+    flex: 1.3;
+}
+
+.detail-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* botón dentro de ficha */
+.detail-main .btn {
+    margin-top: 1.5rem;
+}
