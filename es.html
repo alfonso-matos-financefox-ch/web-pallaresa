@@ -3,11 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Granja La Pallaresa | El mejor chocolate con churros de Barcelona</title>
-    <meta name="description" content="Desde 1947 en la Calle Petritxol. Disfruta del auténtico chocolate suizo con nata casera, churros y ensaimadas en el corazón de Barcelona.">
+    <title>Granja La Pallaresa | Chocolate con churros y postres tradicionales en Barcelona</title>
+    <meta name="description" content="Granja La Pallaresa, chocolatería histórica en la Calle Petritxol de Barcelona. Chocolate con churros, suizos con nata casera, melindros, ensaimadas, crema catalana, menjar blanc, Pedralbes, mató de Montserrat, flanes y arroz con leche.">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="alternate" hreflang="ca" href="https://www.granjaixocolaterialapallaresa.com/" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
+
+    <!-- Schema para negocio local / cafetería -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CafeOrCoffeeShop",
+      "name": "Granja La Pallaresa",
+      "image": "https://www.granjaixocolaterialapallaresa.com/sala.webp",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Carrer de Petritxol, 11",
+        "addressLocality": "Barcelona",
+        "postalCode": "08002",
+        "addressCountry": "ES"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.38203,
+        "longitude": 2.17087
+      },
+      "url": "https://www.granjaixocolaterialapallaresa.com/es.html",
+      "priceRange": "€",
+      "servesCuisine": [
+        "Chocolate a la taza",
+        "Churros",
+        "Postres tradicionales",
+        "Nata montada",
+        "Crema catalana",
+        "Ensaimadas",
+        "Mató de Montserrat",
+        "Menjar Blanc",
+        "Pedralbes"
+      ],
+      "openingHours": [
+        "Mo-Su 09:00-13:00",
+        "Mo-Su 16:00-21:00"
+      ]
+    }
+    </script>
 </head>
 <body>
 
@@ -16,91 +56,202 @@
     </div>
 
     <header class="hero">
-        <div class="container">
+        <div class="overlay"></div>
+        <div class="hero-content container">
             <h1>Granja La Pallaresa</h1>
-            <p class="subtitle">Tradición chocolatera en Barcelona desde 1947</p>
-            <a href="#carta" class="btn">Ver Nuestra Carta</a>
+            <p class="subtitle">Chocolate con churros, nata casera y postres tradicionales en la Calle Petritxol de Barcelona.</p>
+            <p class="meta">
+                Desde 1947 · Barrio Gótico · Chocolatería y granja tradicional
+            </p>
         </div>
     </header>
 
     <main>
-        <section id="historia" class="section">
+        <!-- SECCIÓN ESPECIALIDADES PRINCIPALES -->
+        <section class="section">
             <div class="container">
-                <h2>Un clásico de la Calle Petritxol</h2>
-                <div class="split-container">
-                    <div class="text-content">
-                        <p>Fundada en 1947, La Pallaresa es más que una chocolatería; es un símbolo de Barcelona. Situados en la histórica calle Petritxol, mantenemos viva la tradición de las antiguas granjas catalanas.</p>
-                        <p>Nuestros camareros de siempre, el ambiente clásico y, sobre todo, el aroma a chocolate caliente, te transportarán a una época donde la merienda era sagrada.</p>
-                    </div>
-                    <div class="image-content">
-                        <img src="sala.webp" alt="Sala principal de la Granja La Pallaresa" loading="lazy">
-                        <p class="caption">El ambiente clásico que nos caracteriza.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+                <h2>Nuestras especialidades</h2>
+                <p class="intro">
+                    Elaboramos a diario chocolate a la taza espeso, churros recién fritos y una selección de postres clásicos de la repostería catalana.
+                </p>
 
-        <section id="carta" class="section bg-light">
-            <div class="container">
-                <h2>Nuestras Especialidades</h2>
-                
                 <div class="menu-grid">
+
+                    <!-- CHOCOLATE CON CHURROS -->
                     <div class="menu-item">
-                        <img src="suizo-ensaimada.webp" alt="Suizo con nata" class="menu-img">
-                        <h3>El Suizo</h3>
-                        <p>Nuestro producto estrella. Chocolate a la taza espeso coronado con nuestra inconfundible nata montada casera.</p>
+                        <a href="churros-barcelona.html">
+                            <img src="tazas.webp" alt="Chocolate con churros en Barcelona" class="menu-img">
+                            <h3>Chocolate con churros</h3>
+                            <p>El clásico de La Pallaresa: chocolate a la taza espeso con churros recién hechos.</p>
+                        </a>
                     </div>
+
+                    <!-- SUIZO CON NATA -->
                     <div class="menu-item">
-                        <img src="bandeja.webp" alt="Churros con chocolate" class="menu-img">
-                        <h3>Churros Artesanos</h3>
-                        <p>Crujientes, dorados y hechos al momento. El acompañante perfecto para mojar en el chocolate.</p>
+                        <a href="chocolate-suizo-nata.html">
+                            <img src="suizo-ensaimada.webp" alt="Suizo con nata casera" class="menu-img">
+                            <h3>Suizo con nata casera</h3>
+                            <p>Chocolate caliente coronado con una generosa porción de nata montada casera.</p>
+                        </a>
                     </div>
+
+                    <!-- MELINDROS -->
                     <div class="menu-item">
-                        <img src="crema_catalana.webp" alt="Crema Catalana" class="menu-img">
-                        <h3>Crema Catalana</h3>
-                        <p>Postres lácteos de elaboración propia, quemada al momento.</p>
+                        <a href="melindros-barcelona.html">
+                            <img src="madalenas.webp" alt="Melindros para mojar en chocolate" class="menu-img">
+                            <h3>Melindros</h3>
+                            <p>Bizcochos ligeros y aireados, perfectos para mojar en el chocolate a la taza.</p>
+                        </a>
                     </div>
+
+                    <!-- ENSAIMADAS -->
                     <div class="menu-item">
-                        <img src="pedralbes-con-nata.webp" alt="Menjar blanc o Pedralbes con nata" class="menu-img">
-                        <h3>Menjar Blanc (Pedralbes)</h3>
-                        <p>Un postre delicado y suave, servido con nuestra nata montada.</p>
+                        <a href="ensaimadas-barcelona.html">
+                            <img src="ensaimadas.webp" alt="Ensaimadas recién horneadas" class="menu-img">
+                            <h3>Ensaimadas</h3>
+                            <p>Recién horneadas, suaves y ligeramente dulces, ideales para acompañar el chocolate.</p>
+                        </a>
                     </div>
+
+                    <!-- CREMA CATALANA -->
+                    <div class="menu-item">
+                        <a href="crema-catalana-barcelona.html">
+                            <img src="crema_catalana.webp" alt="Crema catalana casera" class="menu-img">
+                            <h3>Crema catalana</h3>
+                            <p>Postre típico catalán, caramelizado al momento sobre la mesa.</p>
+                        </a>
+                    </div>
+
+                    <!-- MENJAR BLANC -->
+                    <div class="menu-item">
+                        <a href="menjar-blanc-barcelona.html">
+                            <img src="bandeja.webp" alt="Menjar Blanc o manjar blanco" class="menu-img">
+                            <h3>Menjar Blanc</h3>
+                            <p>Manjar blanco elaborado con harina de arroz, crema de almendra, maicena, leche, canela, piel de limón y azúcar.</p>
+                        </a>
+                    </div>
+
+                    <!-- PEDRALBES / MATÓ DE PEDRALBES -->
+                    <div class="menu-item">
+                        <a href="pedralbes-mato-de-pedralbes.html">
+                            <img src="pedralbes-con-nata.webp" alt="Pedralbes o Mató de Pedralbes" class="menu-img">
+                            <h3>Pedralbes (Mató de Pedralbes)</h3>
+                            <p>Postre originario del Monasterio de Pedralbes, que puede servirse solo o con nata montada casera.</p>
+                        </a>
+                    </div>
+
+                    <!-- MATÓ DE MONTSERRAT -->
+                    <div class="menu-item">
+                        <a href="mato-montserrat.html">
+                            <img src="mato-montserrat.webp" alt="Mató de Montserrat con miel" class="menu-img">
+                            <h3>Mató de Montserrat</h3>
+                            <p>Queso fresco suave típico del mel i mató, que se puede tomar con miel o con azúcar.</p>
+                        </a>
+                    </div>
+
+                    <!-- FLAN / ARROZ CON LECHE -->
+                    <div class="menu-item">
+                        <a href="flan-casero-barcelona.html">
+                            <img src="flan-con-nata.webp" alt="Flan casero con nata" class="menu-img">
+                            <h3>Flan casero y arroz con leche</h3>
+                            <p>Postres de cuchara de toda la vida, perfectos después de un chocolate con churros.</p>
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </section>
 
+        <!-- GALERÍA / AMBIENTE -->
         <section class="gallery-section">
             <div class="container">
-                <h2 style="margin-bottom: 30px;">Artesanía y Tradición</h2>
+                <h2>Artesanía y tradición</h2>
                 <div class="gallery-grid">
-                    <div class="gallery-item"><img src="camarero.webp" alt="Servicio profesional" loading="lazy"></div>
-                    <div class="gallery-item"><img src="ensaimadas.webp" alt="Ensaimadas recién hechas" loading="lazy"></div>
-                    <div class="gallery-item"><img src="arroz-con-leche.webp" alt="Arroz con leche casero" loading="lazy"></div>
-                    <div class="gallery-item"><img src="madalenas.webp" alt="Magdalenas caseras" loading="lazy"></div>
-                    <div class="gallery-item"><img src="cuadro.webp" alt="Cuadro de los hermanos Moscardó" loading="lazy"></div>
-                    <div class="gallery-item"><img src="pedralbes.webp" alt="Pedralbes (Menjar blanc) preparados" loading="lazy"></div>
+                    <div class="gallery-item"><img src="camarero.webp" alt="Servicio en sala"></div>
+                    <div class="gallery-item"><img src="sala.webp" alt="Interior de la granja"></div>
+                    <div class="gallery-item"><img src="chocolate-detalle.webp" alt="Detalle de chocolate a la taza"></div>
+                    <div class="gallery-item"><img src="barra.webp" alt="Barra de La Pallaresa"></div>
                 </div>
             </div>
         </section>
 
-        <section id="ubicacion" class="section">
-            <div class="container contact-container">
-                <div class="info">
-                    <h2>Visítanos</h2>
-                    <p><strong>Dirección:</strong><br>Carrer de Petritxol, 11<br>08002 Barcelona (Barrio Gótico)</p>
-                    <p><strong>Horario:</strong></p>
-                    <ul class="hours-list">
-                        <li>Lunes a Sábado: 09:00–13:00 | 16:00–21:00</li>
-                        <li>Domingos: 09:00–13:00 | 17:00–21:00</li>
-                        <li style="color: #bf360c; font-weight: bold; margin-top: 8px; font-size: 0.95rem;">
-                            ❄️ En Diciembre: Domingos tarde abrimos a las 16:00
-                        </li>
+        <!-- CÓMO LLEGAR / MAPA -->
+        <section class="section section-alt">
+            <div class="container two-columns">
+                <div>
+                    <h2>Cómo llegar</h2>
+                    <p>
+                        Nos encontrarás en <strong>Carrer de Petritxol, 11</strong>, una de las calles más emblemáticas del
+                        <strong>Barrio Gótico de Barcelona</strong>, a pocos minutos de Plaza Catalunya y La Rambla.
+                    </p>
+                    <p>
+                        No aceptamos reservas: el servicio es por orden de llegada, como en las granjas de toda la vida.
+                    </p>
+                    <ul class="bullet-list">
+                        <li><strong>Metro:</strong> L1 y L3, estación Catalunya.</li>
+                        <li><strong>Autobús:</strong> líneas con parada en Plaça Catalunya y Portal de l’Àngel.</li>
+                        <li><strong>A pie:</strong> a 2 minutos de la Catedral y del Portal del Ángel.</li>
                     </ul>
-                    <p class="note">* No aceptamos reservas. El servicio es por orden de llegada.</p>
+                    <p>
+                        <a href="https://www.google.com/maps?q=Granja+La+Pallaresa,+Carrer+de+Petritxol,+11,+08002+Barcelona&output=classic"
+                           target="_blank" rel="noopener" class="btn">
+                            Abrir en Google Maps
+                        </a>
+                    </p>
                 </div>
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.633762263594!2d2.1708683!3d41.3820297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2f57b6a22d3%3A0x63205090740922c0!2sGranja%20La%20Pallaresa!5e0!3m2!1ses!2ses!4v1701445566666!5m2!1ses!2ses" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div>
+                    <iframe
+                        title="Mapa de ubicación de Granja La Pallaresa"
+                        src="https://www.google.com/maps?q=Granja+La+Pallaresa,+Carrer+de+Petritxol,+11,+08002+Barcelona&output=embed"
+                        width="100%" height="300" style="border:0;" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
+            </div>
+        </section>
+
+        <!-- BLOQUE SEO LARGO -->
+        <section class="section seo-block">
+            <div class="container">
+                <h2>Chocolate con churros y postres tradicionales en el corazón de Barcelona</h2>
+                <p>
+                    La Pallaresa es una de las chocolaterías históricas más conocidas de Barcelona. Desde 1947 servimos
+                    <strong>chocolate a la taza espeso</strong>, <strong>churros recién fritos</strong>,
+                    <strong>suizos con nata montada casera</strong>, <strong>melindros</strong>,
+                    <strong>ensaimadas</strong>, <strong>crema catalana</strong>, <strong>menjar blanc</strong>,
+                    <strong>Pedralbes</strong>, <strong>mató de Montserrat</strong>, <strong>flanes</strong> y
+                    <strong>arroz con leche</strong>.
+                </p>
+
+                <h3>¿Dónde comer churros con chocolate en Barcelona?</h3>
+                <p>
+                    Si buscas <em>dónde comer churros en Barcelona</em> o una <em>chocolatería en el Barrio Gótico</em>,
+                    la Calle Petritxol es una parada obligatoria. Nuestra granja mantiene el ambiente clásico de las
+                    casas de chocolate de mediados del siglo XX, con mesas de mármol, barra tradicional y un servicio
+                    rápido y cercano.
+                </p>
+
+                <h3>Postres típicos catalanes: menjar blanc, Pedralbes y mel i mató</h3>
+                <p>
+                    Además del chocolate con churros, en La Pallaresa encontrarás una selección de postres típicos
+                    catalanes difíciles de ver reunidos en un mismo lugar:
+                </p>
+                <ul class="bullet-list">
+                    <li><strong>Menjar Blanc</strong> o manjar blanco, elaborado con harina de arroz, crema de almendra,
+                        maicena, leche, canela, piel de limón y azúcar.</li>
+                    <li><strong>Pedralbes</strong> o <strong>Mató de Pedralbes</strong>, receta originaria del Monasterio
+                        de Pedralbes, a base de leche, huevo, azúcar, maicena, piel de limón, canela y anís en grano,
+                        que puede servirse con o sin nata.</li>
+                    <li><strong>Mató de Montserrat</strong>, el clásico <em>mel i mató</em>, un queso fresco suave que
+                        se puede tomar con miel o con azúcar.</li>
+                </ul>
+
+                <h3>Un clásico del Barrio Gótico</h3>
+                <p>
+                    Miles de barceloneses y visitantes nos eligen cada año, especialmente en invierno y en fechas
+                    navideñas, para disfrutar de una taza de chocolate caliente con churros, suizo con nata o crema
+                    catalana. Si quieres vivir la experiencia de una granja tradicional en pleno centro de Barcelona,
+                    te esperamos en La Pallaresa.
+                </p>
             </div>
         </section>
     </main>
@@ -109,7 +260,7 @@
         <div class="container">
             <p>© 2025 Granja La Pallaresa. Todos los derechos reservados.</p>
             <p class="small-text">
-                Gestión de personal y control horario optimizada por 
+                Gestión de personal y control horario optimizada por
                 <a href="https://www.easyfichi.es" target="_blank" rel="noopener" title="Software de control horario">EasyFichi</a>.
             </p>
         </div>
