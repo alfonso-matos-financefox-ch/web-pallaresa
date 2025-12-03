@@ -6,31 +6,7 @@
     <title>Granja La Pallaresa | Xocolata amb xurros i postres tradicionals a Barcelona</title>
     <meta name="description" content="Granja La Pallaresa, xocolateria històrica al carrer Petritxol de Barcelona. Xocolata amb xurros, suïssos amb nata casolana, melindros, ensaïmades, crema catalana, menjar blanc, Pedralbes, mató de Montserrat, flams i arròs amb llet.">
 
-    <style>
-    /* === Critical CSS para pintar el hero INSTANTÁNEO === */
-    .hero {
-        background-image: url('fachada2.webp');
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        padding: 90px 0;
-        text-align: center;
-        color: #fff;
-    }
-    .hero .overlay {
-        position: absolute;
-        inset: 0;
-        background: rgba(0,0,0,0.35);
-    }
-    .hero h1 {
-        font-size: 2.3rem;
-        margin-bottom: 10px;
-    }
-    .hero .subtitle {
-        font-size: 1.1rem;
-    }
-    </style>
-    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles.css">
     <link rel="alternate" hreflang="es" href="https://www.granjaixocolaterialapallaresa.com/es.html" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
 
@@ -223,22 +199,22 @@
                     </p>
                 </div>
                 <div id="map-wrapper">
-                    <img src="mapa-estatico.webp" width="600" height="400" alt="Mapa La Pallaresa" style="max-width:100%; border-radius:8px;">
-                    <button onclick="loadMap()" class="btn" style="margin-top:10px;">Mapa interactiu</button>
-                </div>
+                <img src="mapa-estatico.webp" width="600" height="400" alt="Mapa La Pallaresa" style="max-width:100%; border-radius:8px;">
+                <button onclick="loadMap()" class="btn" style="margin-top:10px;">Mapa Interactivo</button>
+            </div>
 
-                <script>
-                function loadMap() {
-                    const wrapper = document.getElementById('map-wrapper');
-                    wrapper.innerHTML = `
-                        <iframe
-                            title="Mapa d'ubicació de la Granja La Pallaresa"
-                            src="https://www.google.com/maps?q=Granja+La+Pallaresa,+Carrer+de+Petritxol,+11,+08002+Barcelona&output=embed"
-                            width="100%" height="350" style="border:0; border-radius:8px;"
-                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    `;
-                }
-                </script>
+            <script>
+            function loadMap() {
+                const wrapper = document.getElementById('map-wrapper');
+                wrapper.innerHTML = `
+                    <iframe
+                        title="Mapa d'ubicació de la Granja La Pallaresa"
+                        src="https://www.google.com/maps?q=Granja+La+Pallaresa,+Carrer+de+Petritxol,+11,+08002+Barcelona&output=embed"
+                        width="100%" height="350" style="border:0; border-radius:8px;"
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                `;
+            }
+            </script>
             </div>
         </section>
 
