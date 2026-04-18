@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home -->
+  <url>
+    <loc>https://www.granjaixocolaterialapallaresa.com/</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.granjaixocolaterialapallaresa.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.granjaixocolaterialapallaresa.com/es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.granjaixocolaterialapallaresa.com/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.granjaixocolaterialapallaresa.com/es.html</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.granjaixocolaterialapallaresa.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.granjaixocolaterialapallaresa.com/es.html"/>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Pillar pages -->
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/historia.html</loc><priority>0.9</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/historia-es.html</loc><priority>0.9</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/petritxol.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/petritxol-es.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/80-anys.html</loc><priority>0.9</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/80-anys-es.html</loc><priority>0.9</priority></url>
+
+  <!-- Product pages -->
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/xocolata-xurros.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/chocolate-churros-es.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/suis-nata.html</loc><priority>0.7</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/chocolate-suizo-nata-es.html</loc><priority>0.7</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/melindros.html</loc><priority>0.6</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/melindros-es.html</loc><priority>0.6</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/ensaimades.html</loc><priority>0.6</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/ensaimadas-es.html</loc><priority>0.6</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/crema-catalana.html</loc><priority>0.7</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/crema-catalana-es.html</loc><priority>0.7</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/menjar-blanc.html</loc><priority>0.6</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/menjar-blanc-es.html</loc><priority>0.6</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/mato-pedralbes.html</loc><priority>0.7</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/mato-pedralbes-es.html</loc><priority>0.7</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/mato-de-montserrat.html</loc><priority>0.6</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/mato-montserrat-es.html</loc><priority>0.6</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/flam.html</loc><priority>0.6</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/flan-casero-es.html</loc><priority>0.6</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/arros-amb-llet.html</loc><priority>0.6</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/arroz-con-leche-es.html</loc><priority>0.6</priority></url>
+
+  <!-- Blog -->
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/blog/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/blog/es/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/blog/2026/05/paviment-2005.html</loc><priority>0.6</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/blog/2026/05/lleteria.html</loc><priority>0.6</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/blog/2026/04/mato-pedralbes.html</loc><priority>0.6</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/blog/2026/04/magi-roser.html</loc><priority>0.6</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/blog/2026/04/petritxol-1292.html</loc><priority>0.6</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/blog/es/2026/05/pavimento-2005.html</loc><priority>0.6</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/blog/es/2026/05/lecheria.html</loc><priority>0.6</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/blog/es/2026/04/mato-pedralbes.html</loc><priority>0.6</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/blog/es/2026/04/magi-roser.html</loc><priority>0.6</priority></url>
+  <url><loc>https://www.granjaixocolaterialapallaresa.com/blog/es/2026/04/petritxol-1292.html</loc><priority>0.6</priority></url>
+
+</urlset>
