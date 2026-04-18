@@ -666,7 +666,8 @@ body.no-anniversary .anniv-badge,
 body.no-anniversary .topbar .anniv-mini,
 body.no-anniversary .site-header .crest,
 body.no-anniversary .anniv-nav,
-body.no-anniversary .anniv-footer-link {
+body.no-anniversary .anniv-footer-link,
+body.no-anniversary .anniv-only {
     display: none !important;
 }
 /* Keep top bar content right-aligned when the anniversary note is hidden */
