@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="1947 · 80 anys · 2027">
+  <defs>
+    <radialGradient id="seal" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="55%" stop-color="#C9A961"/>
+      <stop offset="100%" stop-color="#8B6914"/>
+    </radialGradient>
+    <radialGradient id="highlight" cx="40%" cy="35%" r="30%">
+      <stop offset="0%" stop-color="#FDE7A8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#FDE7A8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="88" fill="url(#seal)" stroke="#6B4E10" stroke-width="1.5"/>
+  <circle cx="100" cy="100" r="88" fill="url(#highlight)"/>
+  <circle cx="100" cy="100" r="78" fill="none" stroke="#6B4E10" stroke-width="0.6" opacity="0.55"/>
+  <circle cx="100" cy="100" r="64" fill="none" stroke="#6B4E10" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Top arc text: 1947 -->
+  <path id="arcTop" d="M 30 100 A 70 70 0 0 1 170 100" fill="none"/>
+  <text font-family="Cormorant Garamond, Georgia, serif" font-size="16" font-weight="600" letter-spacing="6" fill="#3E2723">
+    <textPath href="#arcTop" startOffset="50%" text-anchor="middle">1 9 4 7</textPath>
+  </text>
+
+  <!-- Bottom arc text: 2027 -->
+  <path id="arcBot" d="M 30 110 A 70 70 0 0 0 170 110" fill="none"/>
+  <text font-family="Cormorant Garamond, Georgia, serif" font-size="16" font-weight="600" letter-spacing="6" fill="#3E2723">
+    <textPath href="#arcBot" startOffset="50%" text-anchor="middle">2 0 2 7</textPath>
+  </text>
+
+  <!-- Center: 80 -->
+  <text x="100" y="115" font-family="Cormorant Garamond, Georgia, serif" font-size="64" font-weight="500" text-anchor="middle" fill="#3E2723">80</text>
+
+  <!-- Side ornaments -->
+  <text x="22" y="107" font-family="Cormorant Garamond, serif" font-size="22" fill="#3E2723" opacity="0.7">✦</text>
+  <text x="172" y="107" font-family="Cormorant Garamond, serif" font-size="22" fill="#3E2723" opacity="0.7">✦</text>
+
+  <!-- Under "80": ANYS -->
+  <text x="100" y="140" font-family="Cormorant Garamond, Georgia, serif" font-style="italic" font-size="14" font-weight="500" letter-spacing="3" text-anchor="middle" fill="#3E2723">anys</text>
+</svg>
