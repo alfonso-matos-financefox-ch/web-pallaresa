@@ -655,13 +655,22 @@ strong { font-weight: 600; color: var(--chocolate-dark); }
 .site-footer a { color: var(--gold); border: none; }
 .site-footer a:hover { color: var(--parchment); }
 
-/* ---------- Kill switch for anniversary layer ---------- */
+/* ---------- Kill switch for anniversary layer ----------
+   body.anniversary     -> anniversary UI visible
+   body.no-anniversary  -> anniversary UI hidden (default before 2027)
+
+   To flip: run ./toggle-anniversary.sh on  (or off)
+*/
 body.no-anniversary .anniv-ribbon,
 body.no-anniversary .anniv-badge,
 body.no-anniversary .topbar .anniv-mini,
-body.no-anniversary .site-header .crest {
+body.no-anniversary .site-header .crest,
+body.no-anniversary .anniv-nav,
+body.no-anniversary .anniv-footer-link {
     display: none !important;
 }
+/* Keep top bar content right-aligned when the anniversary note is hidden */
+body.no-anniversary .topbar .container { justify-content: flex-end; }
 
 /* ---------- Utilities ---------- */
 .text-center { text-align: center; }
